@@ -13,7 +13,7 @@ const ExpenseRow = () => {
       <td className="text-right">
         <div className="flex justify-end gap-3">
           <CiTrash className='size-6 cursor-pointer text-red-600'/>
-          <HiOutlinePencilSquare className='size-6 cursor-pointer text-gray-500'/>assss
+          <HiOutlinePencilSquare className='size-6 cursor-pointer text-gray-500'/>
         </div>
       </td>
     </tr>
