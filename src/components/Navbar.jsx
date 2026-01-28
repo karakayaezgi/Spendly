@@ -1,9 +1,15 @@
 import React from 'react'
-import { Link } from "react-router";
 import { PiWalletLight } from "react-icons/pi";
 import { RxDashboard } from "react-icons/rx";
+import { NavLink } from "react-router";
 import { GoDatabase } from "react-icons/go";
 const Navbar = () => {
+
+  const linkClass = ({ isActive }) => 
+    `flex items-center gap-3 cursor-pointer transition-all duration-200 ease-in-out  p-2 rounded-xl ${isActive ? `bg-gray-200` : `hover:bg-gray-100`}`
+  
+
+
   return (
     <div className='flex items-center shadow p-4 sm:justify-around justify-between sticky top-0 bg-white'>
       <div className='flex items-center gap-3 cursor-pointer'>
@@ -11,18 +17,14 @@ const Navbar = () => {
         <p className='text-2xl text-blue-900 font-bold sm:block hidden'>Spendly</p>
       </div>
       <div className='flex items-center gap-4'>
-        <Link to='/'>
-          <div className='flex items-center gap-3 cursor-pointer transition-all duration-200 ease-in-out hover:bg-gray-100  p-3 rounded-xl'>
-            <RxDashboard className='text-sm' />
-            <p>Ana Sayfa</p>
-          </div>
-        </Link>
-        <Link to='/expenses'>
-          <div className='flex items-center gap-3 cursor-pointer transition-all duration-200 ease-in-out hover:bg-gray-100 p-2 rounded-xl'>
-            <GoDatabase className='text-sm' />
-            <p>Harcamalar</p>
-          </div>
-        </Link>
+        <NavLink className={linkClass} to='/'>
+          <RxDashboard className='text-sm' />
+          <p>Ana Sayfa</p>
+        </NavLink>
+        <NavLink className={linkClass} to='/expenses'>
+          <GoDatabase className='text-sm' />
+          <p>Harcamalar</p>
+        </NavLink>
       </div>
     </div>
   )
