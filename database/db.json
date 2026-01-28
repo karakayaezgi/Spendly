@@ -1,46 +1,11 @@
 {
   "expenses": [
     {
-      "id": "d085b1a3-ccb6-4f44-9930-1961317e4cb1",
-      "title": "market alısverisi",
-      "category": "Gıda",
-      "date": "2026-01-28",
-      "amount": "1500"
-    },
-    {
-      "id": "3f70347c-2f4c-41f1-bb3f-1729db26c9d0",
-      "title": "markett",
-      "category": "Gıda",
-      "date": "2026-01-28",
-      "amount": "4564"
-    },
-    {
-      "id": "297d130d-35dc-4d9c-95c2-8229a494e58f",
-      "title": "efgsdf",
-      "category": "Eğlence",
-      "date": "2026-01-28",
-      "amount": "435"
-    },
-    {
-      "id": "7e9da1e6-b5c1-4310-8e01-087203abc844",
-      "title": "qqqqqqqq",
-      "category": "Sağlık",
-      "date": "2026-01-28",
-      "amount": "23442"
-    },
-    {
-      "id": "165761ca-57b4-42e1-9020-6b3cced47cdc",
-      "title": "atkı aldım",
-      "category": "Giyim",
-      "date": "2026-01-14",
-      "amount": "100"
-    },
-    {
-      "id": "957b9779-f384-4503-bed3-f2b2bf9e5a6f",
-      "title": "zz",
-      "category": "Sağlık",
-      "date": "2026-01-23",
-      "amount": "34"
+      "id": "3dc5",
+      "title": "lhjhjh",
+      "category": "Ulaşım",
+      "date": "2026-01-09",
+      "amount": "7"
     }
   ]
 }

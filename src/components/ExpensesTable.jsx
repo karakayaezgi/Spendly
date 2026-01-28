@@ -1,8 +1,7 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import ExpenseRow from './ExpenseRow'
-import { getExpenses } from '../services/expenseService'
 
-const ExpensesTable = ({expenses}) => {
+const ExpensesTable = ({expenses, onDeleteExpense, onEditExpense}) => {
  
 
   return (
@@ -19,7 +18,7 @@ const ExpensesTable = ({expenses}) => {
         </thead>
         <tbody>
           {
-            expenses.map((expense) => <ExpenseRow key={expense.id} expense={expense}/>)
+            expenses.map((expense) => <ExpenseRow onEdit={() => onEditExpense(expense)} onDelete={() => onDeleteExpense(expense.id)} key={expense.id} expense={expense}/>)
           }
         </tbody>
       </table>
