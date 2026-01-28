@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import ExpenseRow from './ExpenseRow'
+import { getExpenses } from '../services/expenseService'
 
-const ExpensesTable = () => {
+const ExpensesTable = ({expenses}) => {
+ 
+
   return (
     <div className='shadow p-5 rounded-2xl'>
       <table className="w-full ">
@@ -15,7 +18,9 @@ const ExpensesTable = () => {
           </tr>
         </thead>
         <tbody>
-          <ExpenseRow />
+          {
+            expenses.map((expense) => <ExpenseRow key={expense.id} expense={expense}/>)
+          }
         </tbody>
       </table>
 

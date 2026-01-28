@@ -6,7 +6,7 @@ import { GoDatabase } from "react-icons/go";
 const Navbar = () => {
 
   const linkClass = ({ isActive }) => 
-    `flex items-center gap-3 cursor-pointer transition-all duration-200 ease-in-out  p-2 rounded-xl ${isActive ? `bg-gray-200` : `hover:bg-gray-100`}`
+    `flex items-center gap-3 cursor-pointer  p-2 ${isActive ? `border-b-2 border-blue-800` : ``}`
   
 
 

@@ -1,19 +1,24 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Filters from '../components/Filters'
 import ExpensesTable from '../components/ExpensesTable'
 import { HiPlus } from "react-icons/hi";
 import MobileExpenseCard from '../components/MobileExpenseCard';
 import AddExpenseModal from '../components/AddExpenseModal'
+import { getExpenses } from '../services/expenseService';
 const Expenses = () => {
 
   const [isOpenAddExpenseModal, setIsAddExpenseOpenModal] = useState(false)
   const [isMobileModal, setIsMobileModal] = useState(false)
 
+  const [expenses, setExpenses] = useState([])
+
   const handleMobileModal = () => {
     isMobileModal ? setIsMobileModal(false) : setIsMobileModal(true)
-    console.log(isMobileModal);
-    
   }
+
+  useEffect(() => {
+    getExpenses().then(setExpenses)
+  },[expenses])
   return (
     <div>
       <div className='flex items-center justify-between'>
@@ -25,7 +30,7 @@ const Expenses = () => {
       </div>
       <Filters />
       <div>
-        <div className='sm:block hidden'><ExpensesTable  /></div>
+        <div className='sm:block hidden'><ExpensesTable  expenses={expenses}/></div>
         <div className='sm:hidden block'><MobileExpenseCard isMobileModal={isMobileModal} handleMobileModal={handleMobileModal}/></div>
       </div>
       {

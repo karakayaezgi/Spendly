@@ -1,5 +1,5 @@
 import React from 'react'
-import { CiMenuFries } from "react-icons/ci";
+import { CiMenuKebab } from "react-icons/ci";
 import MobileModal from '../components/MobileModal'
 const MobileExpenseCard = ({handleMobileModal, isMobileModal}) => {
     return (
@@ -9,7 +9,7 @@ const MobileExpenseCard = ({handleMobileModal, isMobileModal}) => {
                 <p>Gıda</p>
                 <p className='text-sm text-gray-600'>2023-10-15</p>
                 <strong>120.00 TL</strong>
-                <CiMenuFries onClick={handleMobileModal} className='absolute top-3 right-3 size-5' />
+                <CiMenuKebab onClick={handleMobileModal} className='absolute top-3 right-3 size-5' />
                 {
                     isMobileModal && <div><MobileModal /></div>
                 }
