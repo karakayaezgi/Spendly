@@ -18,6 +18,7 @@ const ExpensesTable = () => {
           <ExpenseRow />
         </tbody>
       </table>
+
     </div>
   )
 }
