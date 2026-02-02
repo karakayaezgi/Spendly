@@ -11,6 +11,8 @@ const Expenses = () => {
   const [isMobileModal, setIsMobileModal] = useState(false)
   const [expenses, setExpenses] = useState([])
   const [editingExpense, setEditingExpense] = useState(null)
+  const [searchText, setSearchText] = useState('')
+  const [selectedCategory, setSelectedCategory] = useState()
 
   const handleMobileModal = () => {
     isMobileModal ? setIsMobileModal(false) : setIsMobileModal(true)
@@ -33,12 +35,24 @@ const Expenses = () => {
     setIsAddExpenseOpenModal(true)
   }
 
+  const visibleExpenses = expenses
+  .filter((expense) => {
+    if(!searchText) return true
+    return expense.title.toLowerCase().includes(searchText.toLowerCase())
+  })
+  .filter((expense) => {
+    if(!selectedCategory) return true
+    return expense.category == selectedCategory
+  })
+
   useEffect(() => {
     const loadExpenses = async () => {
       const data = await getExpenses()
       setExpenses(data)
     }
     loadExpenses()
+
+
   }, [])
   return (
     <div>
@@ -49,9 +63,9 @@ const Expenses = () => {
           <p className='text-gray-600 md:text-base text-sm'>Yeni Ekle</p>
         </div>
       </div>
-      <Filters />
+      <Filters searchText={searchText} setSearchText={setSearchText} setSelectedCategory={setSelectedCategory} selectedCategory={selectedCategory} />
       <div>
-        <div className='sm:block hidden'><ExpensesTable onEditExpense={editExpense} onDeleteExpense={handleDelete} expenses={expenses} /></div>
+        <div className='sm:block hidden'><ExpensesTable onEditExpense={editExpense} onDeleteExpense={handleDelete} expenses={visibleExpenses} /></div>
         <div className='sm:hidden block'><MobileExpenseCard isMobileModal={isMobileModal} handleMobileModal={handleMobileModal} /></div>
       </div>
       {

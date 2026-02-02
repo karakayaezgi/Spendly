@@ -1,11 +1,95 @@
 {
   "expenses": [
     {
-      "id": "3dc5",
-      "title": "lhjhjh",
+      "id": "d95b",
+      "title": "market alışverişi",
+      "category": "Gıda",
+      "date": "2026-01-29",
+      "amount": "1800"
+    },
+    {
+      "id": "31ad",
+      "title": "arkadaslarla kafede kahve",
+      "category": "Eğlence",
+      "date": "2026-01-29",
+      "amount": "240"
+    },
+    {
+      "id": "deaf",
+      "title": "fıstık yeşili kazak",
+      "category": "Giyim",
+      "date": "2026-01-27",
+      "amount": "400"
+    },
+    {
+      "id": "1d76",
+      "title": "eczaneden ilaç",
+      "category": "Sağlık",
+      "date": "2026-01-14",
+      "amount": "43"
+    },
+    {
+      "id": "dd22",
+      "title": "kendime defter",
+      "category": "Kırtasiye",
+      "date": "2026-01-24",
+      "amount": "100"
+    },
+    {
+      "id": "ba83",
+      "title": "ay sonu geldi:((",
+      "category": "Kredi Kartı",
+      "date": "2026-01-29",
+      "amount": "30000"
+    },
+    {
+      "id": "8307",
+      "title": "bimden tiramisu",
+      "category": "Gıda",
+      "date": "2026-01-26",
+      "amount": "1233"
+    },
+    {
+      "id": "887d",
+      "title": "magnezi calcine",
+      "category": "Sağlık",
+      "date": "2026-01-23",
+      "amount": "455"
+    },
+    {
+      "id": "c499",
+      "title": "telefon faturası",
+      "category": "Fatura",
+      "date": "2026-01-27",
+      "amount": "347"
+    },
+    {
+      "id": "46e7",
+      "title": "sinemada mısır ve kola",
+      "category": "Eğlence",
+      "date": "2026-01-21",
+      "amount": "345"
+    },
+    {
+      "id": "b994",
+      "title": "asdasd",
+      "category": "Kırtasiye",
+      "date": "2026-01-01",
+      "amount": "345"
+    },
+    {
+      "id": "b24e",
+      "title": "bbb",
       "category": "Ulaşım",
-      "date": "2026-01-09",
-      "amount": "7"
+      "date": "2026-01-31",
+      "amount": "456"
+    },
+    {
+      "id": "c6ee",
+      "title": "market",
+      "category": "Gıda",
+      "date": "2026-02-02",
+      "amount": "234"
     }
   ]
 }
