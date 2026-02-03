@@ -78,18 +78,25 @@
       "amount": "345"
     },
     {
-      "id": "b24e",
-      "title": "bbb",
-      "category": "Ulaşım",
-      "date": "2026-01-31",
-      "amount": "456"
+      "id": "d1e0",
+      "title": "sonnn",
+      "category": "Fatura",
+      "date": "2026-02-03",
+      "amount": "1400"
     },
     {
-      "id": "c6ee",
-      "title": "market",
+      "id": "1564",
+      "title": "tam bugday ekmek1",
       "category": "Gıda",
-      "date": "2026-02-02",
-      "amount": "234"
+      "date": "2026-02-03",
+      "amount": "45"
+    },
+    {
+      "id": "ed43",
+      "title": "ARABA BENZİN",
+      "category": "Ulaşım",
+      "date": "2026-02-03",
+      "amount": "1500"
     }
   ]
 }
