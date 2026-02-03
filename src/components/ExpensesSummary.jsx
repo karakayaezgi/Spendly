@@ -8,20 +8,14 @@ const ExpensesSummary = ({ expenses }) => {
   const day = d.getDate()
   const month = d.getMonth() + 1
 
-
-
-  const expensesOfToday = expenses.filter((expense) => expense.date.split('-')[2] == day)
-
-  const expensesOfMonth = expenses.filter((expense) => expense.date.split('-')[1] == month)
-
-  const amountOfTodayExpenses = expensesOfToday.map((expense) => Number(expense.amount))
-  const amountOfMonthExpenses = expensesOfMonth.map((expense) => Number(expense.amount))
-  const totalOfToday = amountOfTodayExpenses.reduce((accumulator, currentValue) => {
-    return accumulator + currentValue
-  }, 0)
-  const totalOfMonth = amountOfMonthExpenses.reduce((accumulator, currentValue) => {
-    return accumulator + currentValue
-  }, 0)
+  const totalOfToday = expenses
+  .filter((expense) => Number(expense.date.split('-')[2]) === day)
+  .reduce((accumulator, expense) => accumulator + Number(expense.amount), 0)
+  
+  const totalOfMonth = expenses
+  .filter((expense) => Number(expense.date.split('-')[1]) === month) 
+  .reduce((accumulator, expense) => accumulator + Number(expense.amount), 0)
+  
 
 
   return (
