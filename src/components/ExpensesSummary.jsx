@@ -6,14 +6,22 @@ const ExpensesSummary = ({ expenses }) => {
 
   const d = new Date()
   const day = d.getDate()
+  const month = d.getMonth() + 1
+
+
 
   const expensesOfToday = expenses.filter((expense) => expense.date.split('-')[2] == day)
 
+  const expensesOfMonth = expenses.filter((expense) => expense.date.split('-')[1] == month)
+
   const amountOfTodayExpenses = expensesOfToday.map((expense) => Number(expense.amount))
+  const amountOfMonthExpenses = expensesOfMonth.map((expense) => Number(expense.amount))
   const totalOfToday = amountOfTodayExpenses.reduce((accumulator, currentValue) => {
     return accumulator + currentValue
   }, 0)
-
+  const totalOfMonth = amountOfMonthExpenses.reduce((accumulator, currentValue) => {
+    return accumulator + currentValue
+  }, 0)
 
 
   return (
@@ -25,7 +33,7 @@ const ExpensesSummary = ({ expenses }) => {
           </div>
           <div>
             <p className='text-xs md:text-base'>Bu Ayki Harcamalar</p>
-            <strong className='sm:text-xl lg:text-4xl'>₺ 750.00</strong>
+            <strong className='sm:text-xl lg:text-4xl'>₺ {totalOfMonth}</strong>
           </div>
         </div>
         <div className='flex items-center gap-5 shadow p-3 md:p-5 rounded-2xl'>
