@@ -1,4 +1,5 @@
 import React from "react";
+import EmptyState from "./EmptyState";
 
 const CategoryProgress = ({ expensesThisMonth, totalOfMonth }) => {
 
@@ -31,6 +32,7 @@ const CategoryProgress = ({ expensesThisMonth, totalOfMonth }) => {
       <div>
       </div>
       {
+        categories.length === 0 ? <EmptyState description={'Bu ay için harcama yok.'}/> :
         categories.map((cat, i) => (
           <div key={i} className="my-4">
             <div className="flex justify-between text-sm mb-1">

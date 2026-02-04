@@ -52,6 +52,32 @@ const Expenses = ({expenses, setExpenses}) => {
     )
   }
 
+  let emptyStateConfig = null
+  
+  if(expenses.length === 0){
+    emptyStateConfig = {
+      description: 'Henüz bir harcama eklemediniz.'
+    }
+  }
+  else if(visibleExpenses.length === 0){
+    if(searchText && selectedCategory){
+      emptyStateConfig = {
+        description: 'Arama ve kategori kriterlerinize uygun bir harcama yok.'
+      }
+    }
+    else if(searchText){
+      emptyStateConfig = {
+        description: `"${searchText}" için eşleşen bir harcama yok.`
+      }
+    }
+    else if(selectedCategory){
+      emptyStateConfig = {
+        description: 'Bu kategoride harcama yok.'
+      }
+    }
+  }
+
+
   
   return (
     <div>
@@ -64,7 +90,7 @@ const Expenses = ({expenses, setExpenses}) => {
       </div>
       <Filters selectedSort={selectedSort} setSelectedSort={setSelectedSort} searchText={searchText} setSearchText={setSearchText} setSelectedCategory={setSelectedCategory} selectedCategory={selectedCategory} />
       <div>
-        <div className='sm:block hidden'><ExpensesTable onEditExpense={editExpense} onDeleteExpense={handleDelete} expenses={visibleExpenses} /></div>
+        <div className='sm:block hidden'><ExpensesTable emptyStateConfig={emptyStateConfig} onEditExpense={editExpense} onDeleteExpense={handleDelete} expenses={visibleExpenses} /></div>
         <div className='sm:hidden block'><MobileExpenseCard isMobileModal={isMobileModal} handleMobileModal={handleMobileModal} /></div>
       </div>
       {

@@ -1,7 +1,8 @@
 import React from 'react'
 import ExpenseRow from './ExpenseRow'
+import EmptyState from './EmptyState'
 
-const ExpensesTable = ({expenses, onDeleteExpense, onEditExpense}) => {
+const ExpensesTable = ({expenses, onDeleteExpense, onEditExpense, emptyStateConfig}) => {
  
 
   return (
@@ -18,6 +19,8 @@ const ExpensesTable = ({expenses, onDeleteExpense, onEditExpense}) => {
         </thead>
         <tbody>
           {
+            emptyStateConfig && 
+            expenses.length === 0 ? <EmptyState description={emptyStateConfig.description} /> : 
             expenses.map((expense) => <ExpenseRow onEdit={() => onEditExpense(expense)} onDelete={() => onDeleteExpense(expense.id)} key={expense.id} expense={expense}/>)
           }
         </tbody>
