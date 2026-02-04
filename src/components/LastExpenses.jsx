@@ -1,5 +1,6 @@
 import React from 'react'
 import LastExpenseItem from './LastExpenseItem'
+import {categoryIcons} from '../constants/categoryIcons.jsx'
 
 const LastExpenses = ({ lastFiveExpenses }) => {
   return (
@@ -10,7 +11,7 @@ const LastExpenses = ({ lastFiveExpenses }) => {
       </div>
       {
         lastFiveExpenses.map((lastExpense, i) => {
-          return <LastExpenseItem key={i} lastExpense={lastExpense} />
+          return <LastExpenseItem key={i} lastExpense={lastExpense} categoryIcon={categoryIcons[lastExpense.category]}/>
         })
       }
 

@@ -1,13 +1,12 @@
 import React from 'react'
-import { CiForkAndKnife } from "react-icons/ci";
 
 
-const LastExpenseItem = ({ lastExpense }) => {
+const LastExpenseItem = ({ lastExpense, categoryIcon }) => {
     return (
         <div className='flex items-start justify-between my-4'>
             <div className='flex items-start gap-3'>
                 <div className='bg-gray-200 p-2 rounded-full'>
-                    <CiForkAndKnife className='size-5' />
+                    {categoryIcon}
                 </div>
                 <div className='flex flex-col'>
                     <p className='text-sm sm:text-base font-semibold'>{lastExpense.title}</p>

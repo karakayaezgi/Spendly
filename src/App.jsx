@@ -5,9 +5,12 @@ import './App.css'
 import { Route, Routes } from 'react-router'
 import Dashboard from './pages/Dashboard'
 import Expenses from './pages/Expenses'
+
 function App() {
 
   const [expenses, setExpenses] = useState([])
+
+  
 
   useEffect(() => {
       const loadExpenses = async () => {

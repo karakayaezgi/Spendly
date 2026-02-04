@@ -111,6 +111,34 @@
       "category": "Kişisel Bakım",
       "date": "2026-02-04",
       "amount": "110"
+    },
+    {
+      "id": "11b6",
+      "title": "kırmızı yün atkı",
+      "category": "Giyim",
+      "date": "2026-02-04",
+      "amount": "250"
+    },
+    {
+      "id": "1bb5",
+      "title": "xxxx",
+      "category": "Kredi Kartı",
+      "date": "2026-02-04",
+      "amount": "1800"
+    },
+    {
+      "id": "dcc2",
+      "title": "tasıyormu kontrol",
+      "category": "Kırtasiye",
+      "date": "2026-02-04",
+      "amount": "35"
+    },
+    {
+      "id": "109b",
+      "title": "g",
+      "category": "Eğlence",
+      "date": "2026-02-04",
+      "amount": "1000"
     }
   ]
 }
