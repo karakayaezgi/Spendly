@@ -97,6 +97,27 @@
       "category": "Ulaşım",
       "date": "2026-02-02",
       "amount": "1500"
+    },
+    {
+      "id": "423d",
+      "title": "bugunku harcama 4 subat",
+      "category": "Eğlence",
+      "date": "2026-02-04",
+      "amount": "56"
+    },
+    {
+      "id": "a76e",
+      "title": "ilaçlar",
+      "category": "Sağlık",
+      "date": "2026-02-03",
+      "amount": "1600"
+    },
+    {
+      "id": "7dca",
+      "title": "şampuan",
+      "category": "Kişisel Bakım",
+      "date": "2026-02-04",
+      "amount": "110"
     }
   ]
 }

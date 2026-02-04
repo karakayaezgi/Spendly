@@ -2,21 +2,7 @@ import React from 'react'
 import { CiCalendar } from "react-icons/ci";
 import { IoWalletOutline } from "react-icons/io5";
 
-const ExpensesSummary = ({ expenses }) => {
-
-  const d = new Date()
-  const day = d.getDate()
-  const month = d.getMonth() + 1
-
-  const totalOfToday = expenses
-  .filter((expense) => Number(expense.date.split('-')[2]) === day)
-  .reduce((accumulator, expense) => accumulator + Number(expense.amount), 0)
-  
-  const totalOfMonth = expenses
-  .filter((expense) => Number(expense.date.split('-')[1]) === month) 
-  .reduce((accumulator, expense) => accumulator + Number(expense.amount), 0)
-  
-
+const ExpensesSummary = ({totalOfMonth, totalOfToday }) => {
 
   return (
     <div>

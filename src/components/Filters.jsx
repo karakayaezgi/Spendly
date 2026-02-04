@@ -16,6 +16,7 @@ const Filters = ({searchText, setSearchText, setSelectedCategory, selectedCatego
             <option value="Sağlık">Sağlık</option>
             <option value="Eğlence">Eğlence</option>
             <option value="Fatura">Fatura</option>
+            <option value="Kişisel Bakım">Kişisel Bakım</option>
             <option value="Giyim">Giyim</option>
             <option value="Kırtasiye">Kırtasiye</option>
             <option value="Kredi Kartı">Kredi Kartı</option>

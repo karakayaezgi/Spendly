@@ -54,6 +54,7 @@ const AddExpenseModal = ({onCloseModal, editingExpense, onAddExpense, onUpdateEx
             <option value="Eğlence">Eğlence</option>
             <option value="Fatura">Fatura</option>
             <option value="Giyim">Giyim</option>
+            <option value="Kişisel Bakım">Kişisel Bakım</option>
             <option value="Kırtasiye">Kırtasiye</option>
             <option value="Kredi Kartı">Kredi Kartı</option>
           </select>
