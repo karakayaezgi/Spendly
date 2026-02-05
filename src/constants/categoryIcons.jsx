@@ -8,6 +8,7 @@ import { MdOutlineSelfImprovement } from "react-icons/md";
 import { LuNotebookPen } from "react-icons/lu";
 
 
+
 export const categoryIcons = {
     'Gıda' : <CiForkAndKnife className='md:size-5 text-blue-800'/>,
     'Ulaşım': <IoCar className='md:size-5 text-blue-800'/>,

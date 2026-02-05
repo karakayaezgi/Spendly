@@ -16,7 +16,9 @@ const Expenses = ({ expenses, setExpenses }) => {
   const [selectedSort, setSelectedSort] = useState()
 
   const handleMobileModal = (expense) => {
-    setActiveMobileExpense(expense)
+    setActiveMobileExpense((prev) =>
+    prev?.id === expense.id ? null : expense
+  )
   }
   const closeMobilModal = () => {
     setActiveMobileExpense(null)

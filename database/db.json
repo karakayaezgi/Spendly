@@ -1,11 +1,74 @@
 {
   "expenses": [
     {
-      "id": "1c34",
+      "id": "0bb5",
       "title": "white mocha",
       "category": "Gıda",
       "date": "2026-02-05",
       "amount": "240"
+    },
+    {
+      "id": "3044",
+      "title": "kazak",
+      "category": "Giyim",
+      "date": "2026-02-04",
+      "amount": "500"
+    },
+    {
+      "id": "e355",
+      "title": "eczaneden ilaç",
+      "category": "Sağlık",
+      "date": "2026-01-30",
+      "amount": "1600"
+    },
+    {
+      "id": "0b7e",
+      "title": "sinemada mısır ve kola",
+      "category": "Eğlence",
+      "date": "2026-02-03",
+      "amount": "800"
+    },
+    {
+      "id": "fbf8",
+      "title": "kredi ekstre",
+      "category": "Kredi Kartı",
+      "date": "2026-01-31",
+      "amount": "16500"
+    },
+    {
+      "id": "9bff",
+      "title": "defter kitap",
+      "category": "Kırtasiye",
+      "date": "2026-02-05",
+      "amount": "200"
+    },
+    {
+      "id": "0e05",
+      "title": "araba benzin",
+      "category": "Ulaşım",
+      "date": "2026-02-04",
+      "amount": "2300"
+    },
+    {
+      "id": "35ec",
+      "title": "doğalgaz",
+      "category": "Fatura",
+      "date": "2026-02-01",
+      "amount": "2100"
+    },
+    {
+      "id": "292f",
+      "title": "bimden market alışverişi",
+      "category": "Gıda",
+      "date": "2026-02-05",
+      "amount": "800"
+    },
+    {
+      "id": "31a2",
+      "title": "gratis rimel",
+      "category": "Kişisel Bakım",
+      "date": "2026-02-04",
+      "amount": "700"
     }
   ]
 }

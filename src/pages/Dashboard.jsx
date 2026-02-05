@@ -20,7 +20,7 @@ const Dashboard = ({expenses}) => {
     const expensesThisMonth = expenses
     .filter((expense) => Number(expense.date.split('-')[1]) === month) 
 
-    const lastFiveExpenses = expenses.slice(-7).sort((a,b) => new Date(b.date)-new Date(a.date))
+    const lastFiveExpenses = expenses.slice(-6).sort((a,b) => new Date(b.date)-new Date(a.date))
 
   return (
     <div>

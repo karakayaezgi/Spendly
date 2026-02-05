@@ -25,7 +25,8 @@ const MobileExpenseCard = ({ expenses, handleMobileModal, onEditExpense, onDelet
                             </p>
                         </div>
                         <CiMenuKebab
-                            onClick={() => handleMobileModal(expense)}
+                            onClick={() => {
+                                handleMobileModal(expense)}}
                             className="size-5 text-gray-500 shrink-0"
                         />
                     </div>
