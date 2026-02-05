@@ -11,7 +11,7 @@ const ExpensesSummary = ({totalOfMonth, totalOfToday }) => {
           <div className='p-2 bg-blue-100 rounded-full'>
             <CiCalendar className='size-3 sm:size-6 text-blue-800' />
           </div>
-          <div>
+          <div className='flex flex-col gap-4'>
             <p className='text-xs md:text-base'>Bu Ayki Harcamalar</p>
             <strong className='sm:text-xl lg:text-4xl'>₺ {totalOfMonth}</strong>
           </div>
@@ -20,7 +20,7 @@ const ExpensesSummary = ({totalOfMonth, totalOfToday }) => {
           <div className='p-2 bg-blue-100 rounded-full'>
             <IoWalletOutline className=' size-3 sm:size-6 text-blue-800' />
           </div>
-          <div>
+          <div className='flex flex-col gap-4'>
             <p className='text-xs md:text-base'>Bugünkü Harcamalar</p>
             <strong className='sm:text-xl lg:text-4xl'>₺ {totalOfToday}</strong>
           </div>

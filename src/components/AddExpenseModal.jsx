@@ -44,9 +44,9 @@ const AddExpenseModal = ({onCloseModal, editingExpense, onAddExpense, onUpdateEx
         <form onSubmit={handleSubmit} className='flex flex-col gap-4 mt-4'>
           <div className='flex flex-col'>
             <label htmlFor='title'>Başlık</label>
-            <input onChange={handleChange} value={formData.title} required className='outline-0 p-2 rounded-xl border border-gray-200' name='title' id='title' type="text" placeholder='Başlık' />
+            <input onChange={handleChange} value={formData.title ?? ''} required className='outline-0 p-2 rounded-xl border border-gray-200' name='title' id='title' type="text" placeholder='Başlık' />
           </div>
-          <select required onChange={handleChange} value={formData.category} className='outline-0 p-2 rounded-xl border border-gray-200' name="category">
+          <select required onChange={handleChange} value={formData.category ?? ''} className='outline-0 p-2 rounded-xl border border-gray-200' name="category">
             <option value="">Kategori</option>
             <option value="Gıda">Gıda</option>
             <option value="Ulaşım">Ulaşım</option>
@@ -60,10 +60,10 @@ const AddExpenseModal = ({onCloseModal, editingExpense, onAddExpense, onUpdateEx
           </select>
           <div className='flex flex-col'>
             <label htmlFor='amount'>Tutar</label>
-            <input required onChange={handleChange} value={formData.amount} className='outline-0 p-2 rounded-xl border border-gray-200' id='amount' name='amount' type="number" placeholder='Tutar' />
+            <input required onChange={handleChange} value={formData.amount ?? ''} className='outline-0 p-2 rounded-xl border border-gray-200' id='amount' name='amount' type="number" placeholder='Tutar' />
           </div>
           <div className='w-full'>
-            <input required onChange={handleChange} value={formData.date} className='outline-0 p-2 rounded-xl border border-gray-200' name='date' type="date" id="date" />
+            <input required onChange={handleChange} value={formData.date ?? ''} className='outline-0 p-2 rounded-xl border border-gray-200' name='date' type="date" id="date" />
           </div>
           <div className='flex gap-2 justify-end'>
             <button onClick={onCloseModal} className='p-2 rounded-xl border border-gray-200 cursor-pointer' type='button'>Kapat</button>

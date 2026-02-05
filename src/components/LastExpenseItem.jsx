@@ -3,7 +3,7 @@ import React from 'react'
 
 const LastExpenseItem = ({ lastExpense, categoryIcon }) => {
     return (
-        <div className='flex items-start justify-between my-4'>
+        <div className='flex justify-between my-4'>
             <div className='flex items-start gap-3'>
                 <div className='bg-gray-200 p-2 rounded-full'>
                     {categoryIcon}
@@ -18,7 +18,7 @@ const LastExpenseItem = ({ lastExpense, categoryIcon }) => {
                 </div>
             </div>
             <div>
-                <p className='text-red-600'>-₺ {lastExpense.amount}</p>
+                <p className='text-red-600'>-₺{lastExpense.amount}</p>
             </div>
         </div>
     )

@@ -9,13 +9,13 @@ import { LuNotebookPen } from "react-icons/lu";
 
 
 export const categoryIcons = {
-    'Gıda' : <CiForkAndKnife className='size-5'/>,
-    'Ulaşım': <IoCar className='size-5'/>,
-    'Sağlık': <PiHandHeart className='size-5'/>,
-    'Eğlence': <BsBalloon className='size-5'/>,
-    'Fatura': <RiBillLine className='size-5'/>,
-    'Kişisel Bakım': <MdOutlineSelfImprovement className='size-5'/>,
-    'Giyim': <PiDressLight className='size-5'/>,
-    'Kırtasiye': <LuNotebookPen className='size-5'/>,
-    'Kredi Kartı': <BsCreditCard2Front className='size-5'/>
+    'Gıda' : <CiForkAndKnife className='md:size-5 text-blue-800'/>,
+    'Ulaşım': <IoCar className='md:size-5 text-blue-800'/>,
+    'Sağlık': <PiHandHeart className='md:size-5 text-blue-800'/>,
+    'Eğlence': <BsBalloon className='md:size-5 text-blue-800'/>,
+    'Fatura': <RiBillLine className='md:size-5 text-blue-800'/>,
+    'Kişisel Bakım': <MdOutlineSelfImprovement className='md:size-5 text-blue-800'/>,
+    'Giyim': <PiDressLight className='md:size-5 text-blue-800'/>,
+    'Kırtasiye': <LuNotebookPen className='md:size-5 text-blue-800'/>,
+    'Kredi Kartı': <BsCreditCard2Front className='md:size-5 text-blue-800'/>
   }

@@ -5,7 +5,7 @@ import EmptyState from './EmptyState.jsx'
 
 const LastExpenses = ({ lastFiveExpenses }) => {
   return (
-    <div className='shadow p-6 rounded-2xl'>
+    <div className='shadow p-3 rounded-2xl'>
       <div className="mb-10">
         <strong className="text-2xl">Son işlemler</strong>
         <p className="text-gray-600 text-xs sm:text-sm">En sonki harcamalarınızı görüntüleyin</p>

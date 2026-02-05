@@ -24,7 +24,7 @@ const CategoryProgress = ({ expensesThisMonth, totalOfMonth }) => {
 
 
   return (
-    <div className="shadow p-6 rounded-2xl">
+    <div className="shadow p-3 rounded-2xl">
       <div className="mb-10">
         <strong className="text-2xl">Kategori Dağılımı</strong>
         <p className="text-gray-600 text-xs sm:text-sm">Bu ayki harcamalarınızın kategorilere göre dağılımı</p>
