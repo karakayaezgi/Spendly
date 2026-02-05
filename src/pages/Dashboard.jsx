@@ -20,7 +20,7 @@ const Dashboard = ({expenses}) => {
     const expensesThisMonth = expenses
     .filter((expense) => Number(expense.date.split('-')[1]) === month) 
 
-    const lastFiveExpenses = expenses.slice(-6).sort((a,b) => new Date(b.date)-new Date(a.date))
+    const lastExpenses = expenses.slice(-6).sort((a,b) => new Date(b.date)-new Date(a.date))
 
   return (
     <div>
@@ -28,7 +28,7 @@ const Dashboard = ({expenses}) => {
       <ExpensesSummary totalOfMonth={totalOfMonth} totalOfToday={totalOfToday} expenses={expenses}/>
       <div className='grid md:grid-cols-2 gap-3 my-10'>
         <CategoryProgress totalOfMonth={totalOfMonth} expensesThisMonth={expensesThisMonth}/>
-        <LastExpenses lastFiveExpenses={lastFiveExpenses}/>
+        <LastExpenses lastExpenses={lastExpenses}/>
       </div>
     </div>
   )
