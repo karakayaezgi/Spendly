@@ -44,7 +44,7 @@ This approach improves usability and prevents accidental actions on mobile devic
 
 ### Desktop View
 ![desktop-view](./src/assets/images/desktop-view.png)
-![ddesktop-add-expense-modal](./src/assets/images/desktop-add-expense-modal.png)
+![desktop-add-expense-modal](./src/assets/images/desktop-add-expense-modal.png)
 ![desktop-update-view](./src/assets/images/desktop-update-view.png)
 ![desktop-category](./src/assets/images/desktop-category.png)
 ![desktop-search](./src/assets/images/desktop-search.png)
