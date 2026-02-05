@@ -43,19 +43,19 @@ This approach improves usability and prevents accidental actions on mobile devic
 ## 🖼️ Screenshots
 
 ### Desktop View
-![desktop-view](./src/assets/images/desktop-view.png)
-![desktop-add-expense-modal](./src/assets/images/desktop-add-expense-modal.png)
-![desktop-update-view](./src/assets/images/desktop-update-view.png)
-![desktop-category](./src/assets/images/desktop-category.png)
-![desktop-search](./src/assets/images/desktop-search.png)
-![desktop-empty-state](./src/assets/images/desktop-empty-state.png)
-![desktop-expenses-empty-state](./src/assets/images/desktop-expenses-empty-state.png)
+![desktop-view](/src/assets/images/desktop-view.png)
+![desktop-add-expense-modal](/src/assets/images/desktop-add-expense-modal.png)
+![desktop-update-view](/src/assets/images/desktop-update-view.png)
+![desktop-category](/src/assets/images/desktop-category.png)
+![desktop-search](/src/assets/images/desktop-search.png)
+![desktop-empty-state](/src/assets/images/desktop-empty-state.png)
+![desktop-expenses-empty-state](/src/assets/images/desktop-expenses-empty-state.png)
 
 
 ### Mobile View
-![mobile-view](./src/assets/images/mobile-view.png)
-![mobile-expenses-view](./src/assets/images/mobile-expenses-view.png)
-![mobile-edit-modal](./src/assets/images/mobile-edit-modal.png)
+![mobile-view](/src/assets/images/mobile-view.png)
+![mobile-expenses-view](/src/assets/images/mobile-expenses-view.png)
+![mobile-edit-modal](/src/assets/images/mobile-edit-modal.png)
 
 ---
 
